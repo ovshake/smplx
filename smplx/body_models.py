@@ -123,7 +123,7 @@ class SMPL(nn.Module):
 
         self.gender = gender
         self.age = age
-
+	import ipdb; ipdb.set_trace()
         if data_struct is None:
             if osp.isdir(model_path):
                 model_fn = 'SMPL_{}.{ext}'.format(gender.upper(), ext='pkl')
